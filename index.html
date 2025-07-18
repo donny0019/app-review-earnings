@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-NGN5JHR8');</script>
+<!-- End Google Tag Manager -->
 <meta name="google-site-verification" content="TbW2WtI93w6gVjJ70Iy1MZ-ZRHX2bkgNOJpdjXjFMdU" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,35 +18,39 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://appreviewearnings.netlify.app/" />
 
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
   <meta property="og:title" content="App Review Earnings – Get Paid for Your Opinion" />
   <meta property="og:description" content="Earn $5-$30 per app review. Sign up free and start earning today!" />
   <meta property="og:image" content="https://i.imgur.com/vPihOdC.png" />
   <meta property="og:url" content="https://appreviewearnings.netlify.app/" />
   <meta property="og:type" content="website" />
 
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="App Review Earnings – Get Paid for Your Opinion" />
   <meta name="twitter:description" content="Get paid $5-$30 per app review. No experience needed. Start now!" />
   <meta name="twitter:image" content="https://i.imgur.com/vPihOdC.png" />
 
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
+  <!-- Favicon -->
   <link rel="icon" href="/favicon.ico" />
 
+  <!-- Schema Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Job Placement",
-    "provider": {
-      "@type": "Organization",
+    "@type": "Product",
+    "name": "AppReviewEarnings",
+    "description": "Platform to earn money by reviewing apps",
+    "brand": {
+      "@type": "Brand",
       "name": "AppReviewEarnings"
     },
-    "name": "App Reviewer Jobs",
-    "description": "A platform connecting users with opportunities to earn money by reviewing mobile applications. It's free to join, with users able to earn between $5 and $30 per review.",
     "aggregateRating": {
       "@type": "AggregateRating",
       "ratingValue": "4.9",
@@ -52,10 +58,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     },
     "offers": {
       "@type": "Offer",
-      "url": "https://appreviewearnings.netlify.app/#signup",
+      "url": "https://appreviewearnings.netlify.app/",
       "priceCurrency": "USD",
       "price": "0",
-      "description": "Free to join and start earning."
+      "description": "Free to join with earning potential of $5-$30 per review"
     }
   }
   </script>
@@ -158,6 +164,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: var(--text-light);
     }
 
+    /* Buttons */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -195,6 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       color: white;
     }
 
+    /* Header */
     header {
       padding: 15px 0;
       position: fixed;
@@ -257,6 +265,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       cursor: pointer;
     }
 
+    /* Hero Section */
     .hero {
       padding: 150px 0 80px;
       text-align: center;
@@ -310,6 +319,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: block;
     }
 
+    /* Steps */
     .steps {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -340,6 +350,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       margin: 0 auto 20px;
     }
 
+    /* Testimonials */
     .testimonial-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -369,7 +380,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border: 2px solid var(--primary);
     }
 
-    /* Signup Form Styling */
+    /* Form */
     .form-group {
       margin-bottom: 20px;
     }
@@ -394,114 +405,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-color: var(--primary);
     }
 
-    /* MODIFIED: Signup Success Message Styling */
-    #signupSuccess {
-        display: none; /* Hidden by default */
-        padding: 40px;
-        background-color: var(--card-bg);
-        border: 2px solid var(--primary);
-        border-radius: 12px;
-        text-align: center;
-        box-shadow: var(--shadow-lg);
-        margin: 30px auto;
-        max-width: 600px;
-    }
-    #signupSuccess h3 {
-        color: var(--primary);
-        font-size: 1.8rem;
-        margin-bottom: 15px;
-    }
-
-    /* NEW: Optional Offers Section */
-    .bonus-offers {
-      background: var(--bg);
-      padding: 30px;
-      border-radius: 12px;
-      margin-top: 20px;
-      border: 1px solid rgba(var(--primary), 0.1);
-      box-shadow: var(--shadow-md);
-      text-align: center;
-    }
-
-    .bonus-offers h2 {
-      color: var(--primary);
-      margin-bottom: 10px;
-    }
-
-    .offer-list {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 15px;
-      margin: 25px 0;
-    }
-
-    .offer-card {
-      background: var(--card-bg);
-      border-radius: 10px;
-      padding: 20px;
-      display: flex;
-      align-items: center;
-      border: 1px solid rgba(var(--primary), 0.1);
-      cursor: pointer;
-      transition: var(--transition);
-      text-align: left;
-    }
-
-    .offer-card:hover {
-      transform: translateY(-3px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--primary);
-    }
-
-    .offer-icon {
-      width: 50px;
-      height: 50px;
-      background: rgba(var(--primary), 0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-right: 15px;
-      color: var(--primary);
-      font-size: 1.2rem;
-      flex-shrink: 0;
-    }
-
-    .offer-content {
-      flex-grow: 1;
-    }
-
-    .offer-title {
-      font-weight: 600;
-      margin-bottom: 5px;
-      color: var(--text);
-    }
-
-    .offer-description {
-      font-size: 0.9rem;
-      color: var(--text-light);
-    }
-
-    .offer-reward {
-      background: rgba(var(--secondary), 0.1);
-      color: var(--secondary);
-      padding: 5px 12px;
-      border-radius: 20px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-left: 15px;
-      white-space: nowrap;
-    }
-
-    .affiliate-disclosure {
-        font-size: 0.8rem;
-        color: var(--text-light);
-        margin-top: 25px;
-        text-align: center;
-    }
-
-
-    /* FAQ Styling */
+    /* FAQ */
     .faq-item {
       margin-bottom: 15px;
       border-radius: 10px;
@@ -531,6 +435,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       max-height: 500px;
     }
 
+    /* CTA Section */
     .cta-section {
       text-align: center;
       background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
@@ -568,6 +473,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       flex-wrap: wrap;
     }
 
+    /* Footer */
     footer {
       background: var(--footer-bg);
       color: white;
@@ -611,6 +517,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: 0.85rem;
     }
 
+    /* Additional Pages (Hidden by default) */
     .page-content {
       max-width: 800px;
       margin: 0 auto;
@@ -630,6 +537,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       padding-left: 20px;
     }
 
+    /* Responsive */
     @media (max-width: 768px) {
       h1 {
         font-size: 2.2rem;
@@ -658,9 +566,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </style>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NGN5JHR8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<header>
+<!-- End Google Tag Manager (noscript) -->
+  <!-- Header -->
+  <header>
     <div class="container header-container">
       <a href="#" class="logo">
         <i class="fas fa-coins"></i> AppReviewEarnings
@@ -677,7 +588,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </header>
 
+  <!-- Main Content -->
   <main id="main-content">
+    <!-- Hero Section -->
     <section class="hero">
       <div class="container">
         <h1>Turn App Reviews Into Cash 💸</h1>
@@ -710,31 +623,37 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
+    <!-- How It Works -->
     <section class="how-it-works" id="how-it-works">
       <div class="container">
-        <h2>How to Start Earning</h2>
-        <p>Our process is simple, transparent, and designed to get you paid quickly.</p>
+        <h2>How to Make Money Reviewing Apps in 2025</h2>  
+        <h2>App Testing Jobs: No Experience Required</h2>  
+        <h2>Instant Payouts via PayPal, Venmo, or Crypto</h2>
+         <br><h2>How It Works</h2> </br>
+
+        <p>Earn money in just 3 simple steps:</p>
         
         <div class="steps">
           <div class="step">
             <div class="step-number">1</div>
             <h3>Sign Up Free</h3>
-            <p>Create your free account in 30 seconds. No credit card required.</p>
+            <p>Create your account in 30 seconds. No credit card required.</p>
           </div>
           <div class="step">
             <div class="step-number">2</div>
             <h3>Review Apps</h3>
-            <p>Browse available jobs, test apps from your phone, and write honest reviews.</p>
+            <p>Test apps from your phone and write honest reviews.</p>
           </div>
           <div class="step">
             <div class="step-number">3</div>
             <h3>Get Paid</h3>
-            <p>Receive instant payments via PayPal, Venmo, or crypto for every approved review.</p>
+            <p>Receive instant payments via PayPal, Venmo, or crypto.</p>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Testimonials -->
     <section class="testimonials" id="testimonials">
       <div class="container">
         <h2>Real People, Real Earnings</h2>
@@ -775,10 +694,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 
+    <!-- Signup Form -->
     <section class="signup-section" id="signup">
       <div class="container">
         <h2>Start Earning Today</h2>
-        <p>Complete your free registration to get access to app review jobs.</p>
+        <p>Complete your free registration to get started</p>
         
         <form id="signupForm">
           <div class="form-group">
@@ -791,72 +711,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </div>
           <div class="form-group">
             <label for="password">Create Password</label>
-            <input type="password" id="password" placeholder="Create a password (min. 8 characters)" required>
+            <input type="password" id="password" placeholder="Create a password" required>
           </div>
           <button type="submit" class="btn">
             <i class="fas fa-user-plus"></i> CREATE FREE ACCOUNT
           </button>
         </form>
-
-        <div id="signupSuccess">
-            <h3><i class="fas fa-check-circle"></i> Success! Your Account is Created.</h3>
-            <p>Welcome to AppReviewEarnings! You'll receive an email shortly with instructions on how to access our job board and start reviewing apps.</p>
-            <p>You can now also check out some optional bonus offers below to maximize your earnings.</p>
-        </div>
       </div>
     </section>
 
-    <section class="bonus-offers-section" id="bonus-offers">
-        <div class="container">
-            <div class="bonus-offers">
-              <div class="locker-header">
-                <h2>Optional: Earn Extra Rewards</h2>
-                <p>Want to earn even more? Complete these optional offers from our partners.</p>
-              </div>
-              
-              <div class="offer-list">
-                <div class="offer-card" onclick="window.open('https://eradictrkr.com/myjob', '_blank')">
-                  <div class="offer-icon">
-                    <i class="fas fa-gift"></i>
-                  </div>
-                  <div class="offer-content">
-                    <div class="offer-title">Get a $100 Gift Card</div>
-                    <div class="offer-description">Complete a short survey from our partner to claim your reward.</div>
-                  </div>
-                  <div class="offer-reward">+$5 Bonus</div>
-                </div>
-                
-                <div class="offer-card" onclick="window.open('https://eradictrkr.com/myjob', '_blank')">
-                  <div class="offer-icon">
-                    <i class="fas fa-poll"></i>
-                  </div>
-                  <div class="offer-content">
-                    <div class="offer-title">Try a Free Survey App</div>
-                    <div class="offer-description">Test a new survey platform and earn cash rewards.</div>
-                  </div>
-                  <div class="offer-reward">Instant $3</div>
-                </div>
-                
-                <div class="offer-card" onclick="window.open('https://eradictrkr.com/myjob', '_blank')">
-                  <div class="offer-icon">
-                    <i class="fas fa-shopping-bag"></i>
-                  </div>
-                  <div class="offer-content">
-                    <div class="offer-title">Download a Shopping App</div>
-                    <div class="offer-description">Try a new shopping app and earn cashback on your first purchase.</div>
-                  </div>
-                  <div class="offer-reward">$5 Reward</div>
-                </div>
-              </div>
-              
-              <div class="affiliate-disclosure">
-                <p>These are promotional offers from third-party partners. We may earn a commission if you sign up or complete an offer, which helps us keep AppReviewEarnings free. These offers are not required to participate in our app review program.</p>
-              </div>
-            </div>
-          </div>
-    </section>
-
-
+    <!-- FAQ -->
     <section class="faq-section" id="faq">
       <div class="container">
         <h2>Frequently Asked Questions</h2>
@@ -868,7 +732,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
-              <p>Yes! Signing up and reviewing apps is 100% free. We also have optional partner offers that can help you earn more, but they are not required.</p>
+              <p>Yes! There are no hidden fees. You keep 100% of what you earn.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -877,7 +741,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
-              <p>We pay via PayPal, Venmo, or cryptocurrency within 24 hours of your review being approved.</p>
+              <p>We pay via PayPal, Venmo, or cryptocurrency within 24 hours of review approval.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -886,7 +750,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
-              <p>Most reviewers earn $5–$30 per review. Top users make over $500 a month by combining app reviews with our optional bonus offers.</p>
+              <p>Most reviewers earn $5–$30 per review. Top users make $500+/month.</p>
             </div>
           </div>
           <div class="faq-item">
@@ -895,13 +759,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <i class="fas fa-chevron-down"></i>
             </div>
             <div class="faq-answer">
-              <p>No! If you can use a smartphone, you have all the skills you need. We're looking for honest opinions from everyday users.</p>
+              <p>No! We're looking for honest opinions from everyday users.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Final CTA -->
     <section class="cta-section">
       <div class="container">
         <h2>Ready to Start Earning?</h2>
@@ -923,17 +788,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
   </main>
 
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <a href="#" class="logo" style="color: white; font-size: 1.8rem;">
+      <a href="index.html" class="logo" style="color: white; font-size: 1.8rem;">
         <i class="fas fa-coins"></i> AppReviewEarnings
       </a>
       
       <div class="footer-links">
-        <a href="#privacy-policy">Privacy Policy</a>
-        <a href="#terms-of-service">Terms of Service</a>
-        <a href="#contact-us">Contact Us</a>
-        <a href="#support">Support</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="support.html">Support</a>
       </div>
       
       <div class="social-icons">
@@ -949,78 +815,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </footer>
 
-  <div id="privacy-policy" class="page-content" style="display: none;">
-    <h1>Privacy Policy</h1>
-    <p>Last Updated: <script>document.write(new Date().toLocaleDateString())</script></p>
-    
-    <p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or create an account on appreviewearnings.netlify.app (the "Site").</p>
-    
-    <h2>Personal Information We Collect</h2>
-    <p>When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device. When you create an account, we collect your name, email address, and password.</p>
-    
-    <h2>How We Use Your Personal Information</h2>
-    <p>We use the information we collect to:</p>
-    <ul>
-      <li>Provide and maintain our service</li>
-      <li>Notify you about changes to our service</li>
-      <li>Allow you to participate in interactive features of our service</li>
-      <li>Provide customer support</li>
-      <li>Gather analysis or valuable information so that we can improve our service</li>
-    </ul>
-    
-    <h2>Sharing Your Personal Information</h2>
-    <p>We do not sell your personal information. We may share your information with third-party partners only when you choose to engage with their optional offers. In such cases, the information you provide to them is subject to their privacy policies.</p>
-  </div>
+  <!-- Custom Alert Box CSS -->
+  <style>
+    #customAlertBox {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: var(--card-bg); /* Using a theme variable */
+        color: var(--text); /* Using a theme variable */
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: var(--shadow-lg); /* Using a theme variable */
+        z-index: 1000;
+        text-align: center;
+        border: 2px solid var(--primary); /* Using a theme variable */
+        max-width: 350px;
+        font-family: 'Poppins', sans-serif;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    #customAlertBox.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    #customAlertBox p {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+        color: var(--text-light);
+    }
+    #customAlertBox button {
+        background-color: var(--primary);
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+    #customAlertBox button:hover {
+        background-color: var(--primary-light);
+        transform: translateY(-2px);
+    }
+  </style>
 
-  <div id="terms-of-service" class="page-content" style="display: none;">
-    <h1>Terms of Service</h1>
-    <p>Last Updated: <script>document.write(new Date().toLocaleDateString())</script></p>
-    
-    <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.</p>
-    
-    <h2>Accounts</h2>
-    <p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times.</p>
-    
-    <h2>Termination</h2>
-    <p>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
-    
-    <h2>Third-Party Offers</h2>
-    <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by AppReviewEarnings. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party web sites or services.</p>
-  </div>
-
-  <div id="contact-us" class="page-content" style="display: none;">
-    <h1>Contact Us</h1>
-    <p>Have questions? We're here to help!</p>
-    
-    <h2>Email Support</h2>
-    <p>For general inquiries and support: <a href="mailto:support@appreviewearnings.com">support@appreviewearnings.com</a></p>
-    
-    <h2>Business Inquiries</h2>
-    <p>For business partnerships: <a href="mailto:partners@appreviewearnings.com">partners@appreviewearnings.com</a></p>
-    
-    <h2>Mailing Address</h2>
-    <p>
-      123 Business Street<br>
-      Suite 456<br>
-      San Francisco, CA 94107<br>
-      United States
-    </p>
-  </div>
-
-  <div id="support" class="page-content" style="display: none;">
-    <h1>Support Center</h1>
-    <p>Find answers to common questions or contact our support team.</p>
-    
-    <h2>Frequently Asked Questions</h2>
-    <p>Before contacting support, please check our <a href="#faq">FAQ section</a> as your question may have already been answered.</p>
-    
-    <h2>Submit a Support Ticket</h2>
-    <p>For issues not covered in our FAQ, please email us at <a href="mailto:support@appreviewearnings.com">support@appreviewearnings.com</a> and we'll respond within 24 hours.</p>
-    
-    <h2>Live Chat</h2>
-    <p>Live chat support is available Monday-Friday, 9am-5pm PST.</p>
-  </div>
-
+  <!-- JavaScript -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
       // Dark Mode Toggle
@@ -1062,7 +903,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         counterEl.textContent = counter.toLocaleString();
       }, 3000);
 
-      // MODIFIED: Form Submission Logic
+      // Form Submission
       document.getElementById('signupForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
@@ -1071,82 +912,49 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         const password = document.getElementById('password').value.trim();
         
         if (!fullName || !email || !password) {
-          alert("Please fill in all fields to create your account!");
+          showCustomAlert("Please fill in all fields to create your account!");
           return;
         }
         
         if (password.length < 8) {
-          alert("Password must be at least 8 characters long!");
+          showCustomAlert("Password must be at least 8 characters long!");
           return;
         }
         
-        // Hide the form and show the success message
-        document.getElementById('signupForm').style.display = 'none';
-        document.getElementById('signupSuccess').style.display = 'block';
-        
-        // Scroll to the new bonus offers section to make it visible
-        window.scrollTo({
-          top: document.getElementById('bonus-offers').offsetTop - 100,
-          behavior: 'smooth'
-        });
+        // Log the attempted redirect for debugging purposes
+        console.log("Attempting to redirect to: /success.html");
+        // Redirect to success page using a root-relative path for robustness
+        window.location.href = '/success.html'; 
       });
 
+      // Custom Alert Box Implementation (replaces browser's alert)
+      function showCustomAlert(message) {
+          let alertBox = document.getElementById('customAlertBox');
+          if (!alertBox) {
+              alertBox = document.createElement('div');
+              alertBox.id = 'customAlertBox';
+              document.body.appendChild(alertBox); // Append to body first
 
-      // Page Navigation
-      function showPage(pageId) {
-        document.getElementById('main-content').style.display = 'none';
-        document.querySelectorAll('.page-content').forEach(page => {
-          page.style.display = 'none';
-        });
-        document.getElementById(pageId).style.display = 'block';
-        window.scrollTo(0, 0);
+              const alertMessage = document.createElement('p');
+              alertMessage.id = 'customAlertMessage';
+              alertBox.appendChild(alertMessage);
+
+              const closeButton = document.createElement('button');
+              closeButton.innerText = 'OK';
+              closeButton.onclick = () => {
+                  alertBox.classList.remove('show');
+                  setTimeout(() => {
+                      // alertBox.remove(); // Optional: if you want to remove it from DOM after hiding
+                  }, 300); 
+              };
+              alertBox.appendChild(closeButton);
+          }
+          document.getElementById('customAlertMessage').innerText = message;
+          alertBox.classList.add('show');
       }
 
-      function showMainContent() {
-        document.getElementById('main-content').style.display = 'block';
-        document.querySelectorAll('.page-content').forEach(page => {
-          page.style.display = 'none';
-        });
-        window.scrollTo(0, 0);
-      }
-
-      // Handle page links
-      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-          const href = this.getAttribute('href');
-          
-          if (href === '#') {
-            showMainContent();
-            return;
-          }
-          
-          // Check if it's a page link
-          if (href === '#privacy-policy' || href === '#terms-of-service' || 
-              href === '#contact-us' || href === '#support') {
-            e.preventDefault();
-            showPage(href.substring(1));
-            return;
-          }
-          
-          // Smooth scroll for regular anchor links
-          const target = document.querySelector(href);
-          if (target) {
-            e.preventDefault();
-            showMainContent(); // Ensure main content is visible before scrolling
-            setTimeout(() => {
-                window.scrollTo({
-                    top: target.offsetTop - 80, // Adjusted for fixed header
-                    behavior: 'smooth'
-                });
-            }, 0);
-          }
-        });
-      });
-
-      // Back button functionality
-      window.addEventListener('popstate', function() {
-        showMainContent();
-      });
+      // Ensure header logo links to index.html
+      document.querySelector('header .logo').setAttribute('href', 'index.html');
     });
   </script>
 <script type="application/ld+json">
@@ -1159,7 +967,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "name": "Is it really free to join?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Yes! It’s 100% free to join and start reviewing apps. We also offer optional partner offers if you wish to earn more, but they are not required."
+        "text": "Yes! It’s 100% free to join and start reviewing apps."
       }
     },
     {
@@ -1167,7 +975,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "name": "How much can I earn per review?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Most users earn $5 to $30 per app review depending on the complexity of the review required."
+        "text": "Most users earn $5 to $30 per app review depending on the app."
       }
     },
     {
@@ -1175,7 +983,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "name": "How do I get paid?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "You can receive payments via PayPal, Venmo, or crypto — instantly after your review is approved."
+        "text": "You can receive payments via PayPal, Venmo, or crypto — instantly after approval."
       }
     },
     {
@@ -1183,7 +991,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       "name": "Do I need experience?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "No experience is required! Anyone with a smartphone can get started. We are looking for your honest feedback as a user."
+        "text": "No experience is required! Anyone with a smartphone can get started."
       }
     }
   ]
