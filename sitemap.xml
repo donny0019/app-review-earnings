@@ -4,7 +4,9 @@
 
   <url>
     <loc>https://appreviewearnings.netlify.app/index.html</loc>
-    <lastmod>2025-07-20T23:24:00+00:00</lastmod>
+    <lastmod>2025-07-20T23:30:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://appreviewearnings.netlify.app/index.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://appreviewearnings.netlify.app/fr/index.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://appreviewearnings.netlify.app/es/index.html" />
@@ -16,7 +18,9 @@
 
   <url>
     <loc>https://appreviewearnings.netlify.app/success.html</loc>
-    <lastmod>2025-07-20T23:24:00+00:00</lastmod>
+    <lastmod>2025-07-20T23:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://appreviewearnings.netlify.app/success.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://appreviewearnings.netlify.app/fr/success.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://appreviewearnings.netlify.app/es/success.html" />
@@ -28,28 +32,58 @@
 
   <url>
     <loc>https://appreviewearnings.netlify.app/privacy.html</loc>
-    <lastmod>2025-07-20T23:24:00+00:00</lastmod>
+    <lastmod>2025-07-20T23:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://appreviewearnings.netlify.app/privacy.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://appreviewearnings.netlify.app/fr/privacy.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://appreviewearnings.netlify.app/es/privacy.html" />
-    </url>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/privacy.html" />
+  </url>
+
   <url>
     <loc>https://appreviewearnings.netlify.app/terms.html</loc>
-    <lastmod>2025-07-20T23:24:00+00:00</lastmod>
+    <lastmod>2025-07-20T23:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://appreviewearnings.netlify.app/terms.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://appreviewearnings.netlify.app/fr/terms.html" />
-    </url>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appreviewearnings.netlify.app/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/terms.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/terms.html" />
+  </url>
+
   <url>
     <loc>https://appreviewearnings.netlify.app/contact.html</loc>
-    <lastmod>2025-07-20T23:24:00+00:00</lastmod>
+    <lastmod>2025-07-20T23:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://appreviewearnings.netlify.app/contact.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://appreviewearnings.netlify.app/fr/contact.html" />
-    </url>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appreviewearnings.netlify.app/es/contact.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/contact.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/contact.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/contact.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/contact.html" />
+  </url>
+
   <url>
     <loc>https://appreviewearnings.netlify.app/support.html</loc>
-    <lastmod>2025-07-20T23:24:00+00:00</lastmod>
+    <lastmod>2025-07-20T23:30:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://appreviewearnings.netlify.app/support.html" />
     <xhtml:link rel="alternate" hreflang="fr" href="https://appreviewearnings.netlify.app/fr/support.html" />
-    </url>
+    <xhtml:link rel="alternate" hreflang="es" href="https://appreviewearnings.netlify.app/es/support.html" />
+    <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/support.html" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/support.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/support.html" />
+  </url>
 
 </urlset>
