@@ -11,7 +11,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="google-site-verification" content="TbW2WtI93w6gVjJ70Iy1MZ-ZRHX2bkgNOJpdjXjFMdU" />
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy | AppReviewEarnings</title>
+  <title data-en="Privacy Policy | AppReviewEarnings" data-fr="Politique de confidentialité | AppReviewEarnings" data-es="Política de privacidad | AppReviewEarnings" data-pt="Política de Privacidade | AppReviewEarnings" data-de="Datenschutzrichtlinie | AppReviewEarnings" data-ar="سياسة الخصوصية | AppReviewEarnings">Privacy Policy | AppReviewEarnings</title>
   <meta name="description" content="Read the Privacy Policy for AppReviewEarnings. Learn how we collect, use, and protect your personal information." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://appreviewearnings.netlify.app/privacy.html" />
@@ -28,6 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css" />
 
   <style>
     :root {
@@ -49,11 +50,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     header { padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; background-color: rgba(var(--bg), 0.9); backdrop-filter: blur(10px); box-shadow: var(--shadow-sm); }
     .header-container { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
-    .nav-links { display: flex; gap: 25px; }
+    .nav-links { display: flex; gap: 25px; align-items: center; }
     .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; position: relative; }
     .nav-links a:after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
     .nav-links a:hover:after { width: 100%; }
-    .theme-toggle { background: none; border: none; color: var(--text); font-size: 1.2rem; cursor: pointer; }
+    .theme-toggle { background: none; border: none; color: var(--text); font-size: 1.2rem; cursor: pointer; margin-left: 15px; }
+    .language-selector { position: relative; display: inline-block; }
+    .language-button { background: none; border: none; color: var(--text); cursor: pointer; display: flex; align-items: center; gap: 5px; font-weight: 500; }
+    .language-dropdown { display: none; position: absolute; right: 0; background-color: var(--bg); min-width: 160px; box-shadow: var(--shadow-md); z-index: 1; border-radius: 8px; overflow: hidden; }
+    .language-dropdown a { color: var(--text); padding: 12px 16px; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .language-dropdown a:hover { background-color: var(--primary-light); color: white; }
+    .language-selector:hover .language-dropdown { display: block; }
     .page-content { max-width: 800px; margin: 0 auto; padding: 100px 20px; }
     .page-content h1 { margin-bottom: 30px; font-size: 2.8rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .page-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 1.8rem; color: var(--primary); }
@@ -75,6 +82,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .page-content h2 { font-size: 1.5rem; }
       .nav-links { display: none; }
     }
+    /* RTL styles for Arabic */
+    html[dir="rtl"] body {
+      text-align: right;
+    }
+    html[dir="rtl"] .header-container,
+    html[dir="rtl"] .footer-links,
+    html[dir="rtl"] .social-icons {
+      flex-direction: row-reverse;
+    }
+    html[dir="rtl"] .nav-links a:after {
+      left: auto;
+      right: 0;
+    }
+    html[dir="rtl"] .page-content ul {
+      padding-left: 0;
+      padding-right: 20px;
+    }
+    html[dir="rtl"] .language-dropdown {
+      right: auto;
+      left: 0;
+    }
   </style>
 </head>
 <body>
@@ -88,40 +116,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fas fa-coins"></i> AppReviewEarnings
       </a>
       <div class="nav-links">
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#testimonials">Testimonials</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#signup">Sign Up</a>
+        <a href="index.html#how-it-works" data-en="How It Works" data-fr="Comment ça marche" data-es="Cómo funciona" data-pt="Como funciona" data-de="Wie es funktioniert" data-ar="كيف يعمل">How It Works</a>
+        <a href="index.html#testimonials" data-en="Testimonials" data-fr="Témoignages" data-es="Testimonios" data-pt="Depoimentos" data-de="Erfahrungsberichte" data-ar="الشهادات">Testimonials</a>
+        <a href="index.html#faq" data-en="FAQ" data-fr="FAQ" data-es="Preguntas frecuentes" data-pt="Perguntas frequentes" data-de="FAQ" data-ar="الأسئلة الشائعة">FAQ</a>
+        <a href="index.html#signup" data-en="Sign Up" data-fr="S'inscrire" data-es="Registrarse" data-pt="Cadastre-se" data-de="Registrieren" data-ar="اشتراك">Sign Up</a>
+        
+        <div class="language-selector">
+          <button class="language-button">
+            <span class="fi fi-gb"></span>
+            <span>EN</span>
+          </button>
+          <div class="language-dropdown">
+            <a href="#" data-lang="en"><span class="fi fi-gb"></span> English</a>
+            <a href="#" data-lang="fr"><span class="fi fi-fr"></span> Français</a>
+            <a href="#" data-lang="es"><span class="fi fi-es"></span> Español</a>
+            <a href="#" data-lang="pt"><span class="fi fi-pt"></span> Português</a>
+            <a href="#" data-lang="de"><span class="fi fi-de"></span> Deutsch</a>
+            <a href="#" data-lang="ar"><span class="fi fi-sa"></span> العربية</a>
+          </div>
+        </div>
+        
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
-      <button class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon"></i>
-      </button>
     </div>
   </header>
 
   <main>
     <div class="page-content">
-      <h1>Privacy Policy</h1>
-      <p>Last Updated: <script>document.write(new Date().toLocaleDateString())</script></p>
+      <h1 data-en="Privacy Policy" data-fr="Politique de confidentialité" data-es="Política de privacidad" data-pt="Política de Privacidade" data-de="Datenschutzrichtlinie" data-ar="سياسة الخصوصية">Privacy Policy</h1>
+      <p data-en="Last Updated:" data-fr="Dernière mise à jour :" data-es="Última actualización:" data-pt="Última atualização:" data-de="Zuletzt aktualisiert:" data-ar="آخر تحديث:">Last Updated: <script>document.write(new Date().toLocaleDateString())</script></p>
       
-      <p>This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from appreviewearnings.netlify.app (the "Site").</p>
+      <p data-en="This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from appreviewearnings.netlify.app (the 'Site')." 
+         data-fr="Cette politique de confidentialité décrit comment vos informations personnelles sont collectées, utilisées et partagées lorsque vous visitez ou effectuez un achat sur appreviewearnings.netlify.app (le 'Site')."
+         data-es="Esta Política de Privacidad describe cómo se recopila, utiliza y comparte su información personal cuando visita o realiza una compra en appreviewearnings.netlify.app (el 'Sitio')."
+         data-pt="Esta Política de Privacidade descreve como suas informações pessoais são coletadas, usadas e compartilhadas quando você visita ou faz uma compra em appreviewearnings.netlify.app (o 'Site')."
+         data-de="Diese Datenschutzrichtlinie beschreibt, wie Ihre persönlichen Daten erfasst, verwendet und geteilt werden, wenn Sie appreviewearnings.netlify.app (die 'Website') besuchen oder einen Kauf tätigen."
+         data-ar="تصف سياسة الخصوصية هذه كيفية جمع معلوماتك الشخصية واستخدامها ومشاركتها عند زيارة موقع appreviewearnings.netlify.app (الموقع) أو إجراء عملية شراء منه.">This Privacy Policy describes how your personal information is collected, used, and shared when you visit or make a purchase from appreviewearnings.netlify.app (the "Site").</p>
       
-      <h2>Personal Information We Collect</h2>
-      <p>When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device.</p>
+      <h2 data-en="Personal Information We Collect" data-fr="Informations personnelles que nous collectons" data-es="Información personal que recopilamos" data-pt="Informações pessoais que coletamos" data-de="Persönliche Daten, die wir sammeln" data-ar="المعلومات الشخصية التي نجمعها">Personal Information We Collect</h2>
+      <p data-en="When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device." 
+         data-fr="Lorsque vous visitez le Site, nous collectons automatiquement certaines informations sur votre appareil, y compris des informations sur votre navigateur Web, votre adresse IP, votre fuseau horaire et certains des cookies installés sur votre appareil."
+         data-es="Cuando visita el Sitio, recopilamos automáticamente cierta información sobre su dispositivo, incluida información sobre su navegador web, dirección IP, zona horaria y algunas de las cookies instaladas en su dispositivo."
+         data-pt="Quando você visita o Site, coletamos automaticamente certas informações sobre seu dispositivo, incluindo informações sobre seu navegador da web, endereço IP, fuso horário e alguns dos cookies instalados em seu dispositivo."
+         data-de="Wenn Sie die Website besuchen, erfassen wir automatisch bestimmte Informationen über Ihr Gerät, einschließlich Informationen über Ihren Webbrowser, Ihre IP-Adresse, Ihre Zeitzone und einige der auf Ihrem Gerät installierten Cookies."
+         data-ar="عندما تزور الموقع، نقوم تلقائيًا بجمع معلومات معينة عن جهازك، بما في ذلك معلومات حول متصفح الويب وعنوان IP والمنطقة الزمنية وبعض ملفات تعريف الارتباط المثبتة على جهازك.">When you visit the Site, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the cookies that are installed on your device.</p>
       
-      <h2>How We Use Your Personal Information</h2>
-      <p>We use the information we collect to:</p>
+      <h2 data-en="How We Use Your Personal Information" data-fr="Comment nous utilisons vos informations personnelles" data-es="Cómo utilizamos su información personal" data-pt="Como usamos suas informações pessoais" data-de="Wie wir Ihre persönlichen Daten verwenden" data-ar="كيف نستخدم معلوماتك الشخصية">How We Use Your Personal Information</h2>
+      <p data-en="We use the information we collect to:" data-fr="Nous utilisons les informations que nous collectons pour :" data-es="Utilizamos la información que recopilamos para:" data-pt="Usamos as informações que coletamos para:" data-de="Wir verwenden die von uns gesammelten Informationen, um:" data-ar="نستخدم المعلومات التي نجمعها لـ:">We use the information we collect to:</p>
       <ul>
-        <li>Provide and maintain our service</li>
-        <li>Notify you about changes to our service</li>
-        <li>Allow you to participate in interactive features of our service</li>
-        <li>Provide customer support</li>
-        <li>Gather analysis or valuable information so that we can improve our service</li>
+        <li data-en="Provide and maintain our service" data-fr="Fournir et maintenir notre service" data-es="Proporcionar y mantener nuestro servicio" data-pt="Fornecer e manter nosso serviço" data-de="Unseren Service bereitstellen und aufrechterhalten" data-ar="توفير خدمتنا والحفاظ عليها">Provide and maintain our service</li>
+        <li data-en="Notify you about changes to our service" data-fr="Vous informer des changements à notre service" data-es="Notificarle sobre cambios en nuestro servicio" data-pt="Notificá-lo sobre alterações em nosso serviço" data-de="Sie über Änderungen an unserem Service informieren" data-ar="إخطارك بالتغييرات في خدمتنا">Notify you about changes to our service</li>
+        <li data-en="Allow you to participate in interactive features of our service" data-fr="Vous permettre de participer aux fonctionnalités interactives de notre service" data-es="Permitirle participar en las funciones interactivas de nuestro servicio" data-pt="Permitir que você participe dos recursos interativos do nosso serviço" data-de="Ihnen die Teilnahme an interaktiven Funktionen unseres Dienstes ermöglichen" data-ar="السماح لك بالمشاركة في الميزات التفاعلية لخدمتنا">Allow you to participate in interactive features of our service</li>
+        <li data-en="Provide customer support" data-fr="Fournir un support client" data-es="Proporcionar soporte al cliente" data-pt="Fornecer suporte ao cliente" data-de="Kundensupport bereitstellen" data-ar="توفير دعم العملاء">Provide customer support</li>
+        <li data-en="Gather analysis or valuable information so that we can improve our service" data-fr="Recueillir des analyses ou des informations précieuses afin que nous puissions améliorer notre service" data-es="Recopilar análisis o información valiosa para que podamos mejorar nuestro servicio" data-pt="Coletar análises ou informações valiosas para que possamos melhorar nosso serviço" data-de="Analysen oder wertvolle Informationen sammeln, damit wir unseren Service verbessern können" data-ar="جمع التحليلات أو المعلومات القيمة حتى نتمكن من تحسين خدمتنا">Gather analysis or valuable information so that we can improve our service</li>
       </ul>
       
-      <h2>Sharing Your Personal Information</h2>
-      <p>We may share your personal information with third parties to help us use your personal information, as described above.</p>
-      <p>For any privacy-related questions, please contact us at <a href="mailto:support@appreviewearnings.netlify.app">support@appreviewearnings.netlify.app</a>.</p>
+      <h2 data-en="Sharing Your Personal Information" data-fr="Partage de vos informations personnelles" data-es="Compartir su información personal" data-pt="Compartilhando suas informações pessoais" data-de="Teilen Ihrer persönlichen Daten" data-ar="مشاركة معلوماتك الشخصية">Sharing Your Personal Information</h2>
+      <p data-en="We may share your personal information with third parties to help us use your personal information, as described above." 
+         data-fr="Nous pouvons partager vos informations personnelles avec des tiers pour nous aider à utiliser vos informations personnelles, comme décrit ci-dessus."
+         data-es="Podemos compartir su información personal con terceros para ayudarnos a utilizar su información personal, como se describe arriba."
+         data-pt="Podemos compartilhar suas informações pessoais com terceiros para nos ajudar a usar suas informações pessoais, conforme descrito acima."
+         data-de="Wir können Ihre persönlichen Daten mit Dritten teilen, um uns bei der Nutzung Ihrer persönlichen Daten zu helfen, wie oben beschrieben."
+         data-ar="قد نشارك معلوماتك الشخصية مع أطراف ثالثة لمساعدتنا في استخدام معلوماتك الشخصية، كما هو موضح أعلاه.">We may share your personal information with third parties to help us use your personal information, as described above.</p>
+      <p data-en="For any privacy-related questions, please contact us at" 
+         data-fr="Pour toute question relative à la confidentialité, veuillez nous contacter à"
+         data-es="Para cualquier pregunta relacionada con la privacidad, contáctenos en"
+         data-pt="Para quaisquer dúvidas relacionadas à privacidade, entre em contato conosco em"
+         data-de="Bei Fragen zum Datenschutz wenden Sie sich bitte an"
+         data-ar="لأي أسئلة متعلقة بالخصوصية، يرجى الاتصال بنا على">For any privacy-related questions, please contact us at <a href="mailto:support@appreviewearnings.netlify.app">support@appreviewearnings.netlify.app</a>.</p>
     </div>
   </main>
 
@@ -132,10 +196,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
       
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="support.html">Support</a>
+        <a href="privacy.html" data-en="Privacy Policy" data-fr="Politique de confidentialité" data-es="Política de privacidad" data-pt="Política de privacidade" data-de="Datenschutzrichtlinie" data-ar="سياسة الخصوصية">Privacy Policy</a>
+        <a href="terms.html" data-en="Terms of Service" data-fr="Conditions d'utilisation" data-es="Términos de servicio" data-pt="Termos de serviço" data-de="Nutzungsbedingungen" data-ar="شروط الخدمة">Terms of Service</a>
+        <a href="contact.html" data-en="Contact Us" data-fr="Contactez-nous" data-es="Contáctenos" data-pt="Contate-nos" data-de="Kontakt" data-ar="اتصل بنا">Contact Us</a>
+        <a href="support.html" data-en="Support" data-fr="Support" data-es="Soporte" data-pt="Suporte" data-de="Support" data-ar="الدعم">Support</a>
       </div>
       
       <div class="social-icons">
@@ -146,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       
       <div class="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> AppReviewEarnings. All rights reserved.
+        &copy; <script>document.write(new Date().getFullYear())</script> AppReviewEarnings. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-es="Todos los derechos reservados." data-pt="Todos os direitos reservados." data-de="Alle Rechte vorbehalten." data-ar=".جميع الحقوق محفوظة">All rights reserved.</span>
       </div>
     </div>
   </footer>
@@ -167,7 +231,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         localStorage.setItem('theme', isDark ? 'light' : 'dark');
         themeToggle.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
       });
+
+      // Language switching functionality
+      const langElements = document.querySelectorAll('[data-en]');
+      const languageLinks = document.querySelectorAll('.language-dropdown a');
+      const languageButton = document.querySelector('.language-button');
+      
+      // Set initial language from localStorage or default to English
+      const currentLang = localStorage.getItem('language') || 'en';
+      setLanguage(currentLang);
+      
+      // Add click event to language links
+      languageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const lang = this.getAttribute('data-lang');
+          setLanguage(lang);
+          localStorage.setItem('language', lang);
+        });
+      });
+      
+      function setLanguage(lang) {
+        // Update all elements with translations
+        langElements.forEach(el => {
+          if (el.getAttribute(`data-${lang}`)) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+              el.placeholder = el.getAttribute(`data-${lang}`);
+            } else {
+              el.textContent = el.getAttribute(`data-${lang}`);
+            }
+          }
+        });
+        
+        // Update language button
+        const flagClass = {
+          'en': 'fi-gb',
+          'fr': 'fi-fr',
+          'es': 'fi-es',
+          'pt': 'fi-pt',
+          'de': 'fi-de',
+          'ar': 'fi-sa'
+        }[lang];
+        
+        const langText = {
+          'en': 'EN',
+          'fr': 'FR',
+          'es': 'ES',
+          'pt': 'PT',
+          'de': 'DE',
+          'ar': 'AR'
+        }[lang];
+        
+        languageButton.innerHTML = `<span class="fi ${flagClass}"></span> <span>${langText}</span>`;
+        
+        // Set RTL for Arabic
+        if (lang === 'ar') {
+          document.documentElement.dir = 'rtl';
+          document.documentElement.lang = 'ar';
+        } else {
+          document.documentElement.dir = 'ltr';
+          document.documentElement.lang = lang;
+        }
+      }
     });
+document.addEventListener('DOMContentLoaded', function() {
+    // --- THEME TOGGLE ---
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', function() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newTheme = isDark ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        themeToggle.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+    });
+
+    // --- LANGUAGE SWITCHING ---
+    const langElements = document.querySelectorAll('[data-en]');
+    const languageLinks = document.querySelectorAll('.language-dropdown a');
+    const languageButton = document.querySelector('.language-button');
+
+    // Set initial language from localStorage or browser, default to English
+    const savedLang = localStorage.getItem('language');
+    const browserLang = navigator.language.slice(0, 2);
+    const currentLang = savedLang || (['en', 'fr', 'es', 'pt', 'de', 'ar'].includes(browserLang) ? browserLang : 'en');
+    
+    setLanguage(currentLang);
+
+    // Add click event to all language links in the dropdown
+    languageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+            localStorage.setItem('language', lang); // Save user's choice
+        });
+    });
+
+    function setLanguage(lang) {
+        // Update all text elements with the selected language
+        langElements.forEach(el => {
+            const translation = el.getAttribute(`data-${lang}`);
+            if (translation) {
+                // Check if the element is an input to set placeholder
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            }
+        });
+
+        // Update the main language button's flag and text
+        const flagClass = { 'en': 'fi-gb', 'fr': 'fi-fr', 'es': 'fi-es', 'pt': 'fi-pt', 'de': 'fi-de', 'ar': 'fi-sa' }[lang];
+        const langText = lang.toUpperCase();
+        languageButton.innerHTML = `<span class="fi ${flagClass}"></span> <span>${langText}</span>`;
+
+        // Set page direction for Arabic (Right-to-Left)
+        if (lang === 'ar') {
+            document.documentElement.dir = 'rtl';
+            document.documentElement.lang = 'ar';
+        } else {
+            document.documentElement.dir = 'ltr';
+            document.documentElement.lang = lang;
+        }
+    }
+});
   </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NGN5JHR8"></script>
 <script>

@@ -28,6 +28,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icons/6.6.6/css/flag-icons.min.css" />
 
   <style>
     :root {
@@ -49,11 +50,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     header { padding: 15px 0; position: fixed; width: 100%; top: 0; z-index: 1000; background-color: rgba(var(--bg), 0.9); backdrop-filter: blur(10px); box-shadow: var(--shadow-sm); }
     .header-container { display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 1.4rem; font-weight: 700; color: var(--primary); text-decoration: none; display: flex; align-items: center; gap: 8px; }
-    .nav-links { display: flex; gap: 25px; }
+    .nav-links { display: flex; gap: 25px; align-items: center; }
     .nav-links a { color: var(--text); text-decoration: none; font-weight: 500; position: relative; }
     .nav-links a:after { content: ''; position: absolute; bottom: -3px; left: 0; width: 0; height: 2px; background: var(--primary); transition: var(--transition); }
     .nav-links a:hover:after { width: 100%; }
-    .theme-toggle { background: none; border: none; color: var(--text); font-size: 1.2rem; cursor: pointer; }
+    .theme-toggle { background: none; border: none; color: var(--text); font-size: 1.2rem; cursor: pointer; margin-left: 15px; }
+    .language-selector { position: relative; display: inline-block; }
+    .language-button { background: none; border: none; color: var(--text); cursor: pointer; display: flex; align-items: center; gap: 5px; font-weight: 500; }
+    .language-dropdown { display: none; position: absolute; right: 0; background-color: var(--bg); min-width: 160px; box-shadow: var(--shadow-md); z-index: 1; border-radius: 8px; overflow: hidden; }
+    .language-dropdown a { color: var(--text); padding: 12px 16px; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .language-dropdown a:hover { background-color: var(--primary-light); color: white; }
+    .language-selector:hover .language-dropdown { display: block; }
     .page-content { max-width: 800px; margin: 0 auto; padding: 100px 20px; }
     .page-content h1 { margin-bottom: 30px; font-size: 2.8rem; background: linear-gradient(90deg, var(--primary), var(--secondary)); -webkit-background-clip: text; background-clip: text; color: transparent; }
     .page-content h2 { margin-top: 30px; margin-bottom: 15px; font-size: 1.8rem; color: var(--primary); }
@@ -75,6 +82,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .page-content h2 { font-size: 1.5rem; }
       .nav-links { display: none; }
     }
+    /* RTL styles for Arabic */
+    html[dir="rtl"] body {
+      text-align: right;
+    }
+    html[dir="rtl"] .header-container,
+    html[dir="rtl"] .footer-links,
+    html[dir="rtl"] .social-icons {
+      flex-direction: row-reverse;
+    }
+    html[dir="rtl"] .nav-links a:after {
+      left: auto;
+      right: 0;
+    }
+    html[dir="rtl"] .page-content ul {
+      padding-left: 0;
+      padding-right: 20px;
+    }
   </style>
 </head>
 <body>
@@ -88,34 +112,50 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <i class="fas fa-coins"></i> AppReviewEarnings
       </a>
       <div class="nav-links">
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#testimonials">Testimonials</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#signup">Sign Up</a>
+        <a href="index.html#how-it-works" data-en="How It Works" data-fr="Comment ça marche" data-es="Cómo funciona" data-pt="Como funciona" data-de="Wie es funktioniert" data-ar="كيف يعمل">How It Works</a>
+        <a href="index.html#testimonials" data-en="Testimonials" data-fr="Témoignages" data-es="Testimonios" data-pt="Depoimentos" data-de="Erfahrungsberichte" data-ar="الشهادات">Testimonials</a>
+        <a href="index.html#faq" data-en="FAQ" data-fr="FAQ" data-es="Preguntas frecuentes" data-pt="Perguntas frequentes" data-de="FAQ" data-ar="الأسئلة الشائعة">FAQ</a>
+        <a href="index.html#signup" data-en="Sign Up" data-fr="S'inscrire" data-es="Registrarse" data-pt="Cadastre-se" data-de="Registrieren" data-ar="اشتراك">Sign Up</a>
+        
+        <div class="language-selector">
+          <button class="language-button">
+            <span class="fi fi-gb"></span>
+            <span>EN</span>
+          </button>
+          <div class="language-dropdown">
+            <a href="#" data-lang="en"><span class="fi fi-gb"></span> English</a>
+            <a href="#" data-lang="fr"><span class="fi fi-fr"></span> Français</a>
+            <a href="#" data-lang="es"><span class="fi fi-es"></span> Español</a>
+            <a href="#" data-lang="pt"><span class="fi fi-pt"></span> Português</a>
+            <a href="#" data-lang="de"><span class="fi fi-de"></span> Deutsch</a>
+            <a href="#" data-lang="ar"><span class="fi fi-sa"></span> العربية</a>
+          </div>
+        </div>
+        
+        <button class="theme-toggle" id="themeToggle">
+          <i class="fas fa-moon"></i>
+        </button>
       </div>
-      <button class="theme-toggle" id="themeToggle">
-        <i class="fas fa-moon"></i>
-      </button>
     </div>
   </header>
 
   <main>
     <div class="page-content">
-      <h1>Contact Us</h1>
-      <p>Have questions? We're here to help!</p>
+      <h1 data-en="Contact Us" data-fr="Contactez-nous" data-es="Contáctenos" data-pt="Contate-nos" data-de="Kontakt" data-ar="اتصل بنا">Contact Us</h1>
+      <p data-en="Have questions? We're here to help!" data-fr="Des questions ? Nous sommes là pour vous aider !" data-es="¿Tienes preguntas? ¡Estamos aquí para ayudarte!" data-pt="Tem dúvidas? Estamos aqui para ajudar!" data-de="Haben Sie Fragen? Wir sind hier, um zu helfen!" data-ar="لديك أسئلة؟ نحن هنا لمساعدتك!">Have questions? We're here to help!</p>
       
-      <h2>Email Support</h2>
-      <p>For general inquiries and support: <a href="mailto:support@appreviewearnings.netlify.app">support@appreviewearnings.netlify.app</a></p>
+      <h2 data-en="Email Support" data-fr="Support par email" data-es="Soporte por correo" data-pt="Suporte por e-mail" data-de="E-Mail-Support" data-ar="الدعم عبر البريد الإلكتروني">Email Support</h2>
+      <p data-en="For general inquiries and support:" data-fr="Pour les demandes générales et le support :" data-es="Para consultas generales y soporte:" data-pt="Para perguntas gerais e suporte:" data-de="Für allgemeine Anfragen und Support:" data-ar="للاستفسارات العامة والدعم:">For general inquiries and support: <a href="mailto:support@appreviewearnings.netlify.app">support@appreviewearnings.netlify.app</a></p>
       
-      <h2>Business Inquiries</h2>
-      <p>For business partnerships: <a href="mailto:partners@appreviewearnings.netlify.app">partners@appreviewearnings.netlify.app</a></p>
+      <h2 data-en="Business Inquiries" data-fr="Demandes commerciales" data-es="Consultas comerciales" data-pt="Consultas comerciais" data-de="Geschäftliche Anfragen" data-ar="الاستفسارات التجارية">Business Inquiries</h2>
+      <p data-en="For business partnerships:" data-fr="Pour les partenariats commerciaux :" data-es="Para asociaciones comerciales:" data-pt="Para parcerias comerciais:" data-de="Für Geschäftspartnerschaften:" data-ar="للشراكات التجارية:">For business partnerships: <a href="mailto:partners@appreviewearnings.netlify.app">partners@appreviewearnings.netlify.app</a></p>
       
-      <h2>Mailing Address</h2>
+      <h2 data-en="Mailing Address" data-fr="Adresse postale" data-es="Dirección postal" data-pt="Endereço postal" data-de="Postanschrift" data-ar="عنوان البريد">Mailing Address</h2>
       <p>
         123 Business Street<br>
         Suite 456<br>
         San Francisco, CA 94107<br>
-        United States
+        <span data-en="United States" data-fr="États-Unis" data-es="Estados Unidos" data-pt="Estados Unidos" data-de="Vereinigte Staaten" data-ar="الولايات المتحدة">United States</span>
       </p>
     </div>
   </main>
@@ -127,10 +167,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </a>
       
       <div class="footer-links">
-        <a href="privacy.html">Privacy Policy</a>
-        <a href="terms.html">Terms of Service</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="support.html">Support</a>
+        <a href="privacy.html" data-en="Privacy Policy" data-fr="Politique de confidentialité" data-es="Política de privacidad" data-pt="Política de privacidade" data-de="Datenschutzrichtlinie" data-ar="سياسة الخصوصية">Privacy Policy</a>
+        <a href="terms.html" data-en="Terms of Service" data-fr="Conditions d'utilisation" data-es="Términos de servicio" data-pt="Termos de serviço" data-de="Nutzungsbedingungen" data-ar="شروط الخدمة">Terms of Service</a>
+        <a href="contact.html" data-en="Contact Us" data-fr="Contactez-nous" data-es="Contáctenos" data-pt="Contate-nos" data-de="Kontakt" data-ar="اتصل بنا">Contact Us</a>
+        <a href="support.html" data-en="Support" data-fr="Support" data-es="Soporte" data-pt="Suporte" data-de="Support" data-ar="الدعم">Support</a>
       </div>
       
       <div class="social-icons">
@@ -141,7 +181,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
       
       <div class="copyright">
-        &copy; <script>document.write(new Date().getFullYear())</script> AppReviewEarnings. All rights reserved.
+        &copy; <script>document.write(new Date().getFullYear())</script> AppReviewEarnings. <span data-en="All rights reserved." data-fr="Tous droits réservés." data-es="Todos los derechos reservados." data-pt="Todos os direitos reservados." data-de="Alle Rechte vorbehalten." data-ar=".جميع الحقوق محفوظة">All rights reserved.</span>
       </div>
     </div>
   </footer>
@@ -162,7 +202,138 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         localStorage.setItem('theme', isDark ? 'light' : 'dark');
         themeToggle.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
       });
+
+      // Language switching functionality
+      const langElements = document.querySelectorAll('[data-en]');
+      const languageLinks = document.querySelectorAll('.language-dropdown a');
+      const languageButton = document.querySelector('.language-button');
+      
+      // Set initial language from localStorage or default to English
+      const currentLang = localStorage.getItem('language') || 'en';
+      setLanguage(currentLang);
+      
+      // Add click event to language links
+      languageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const lang = this.getAttribute('data-lang');
+          setLanguage(lang);
+          localStorage.setItem('language', lang);
+        });
+      });
+      
+      function setLanguage(lang) {
+        // Update all elements with translations
+        langElements.forEach(el => {
+          if (el.getAttribute(`data-${lang}`)) {
+            if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+              el.placeholder = el.getAttribute(`data-${lang}`);
+            } else {
+              el.textContent = el.getAttribute(`data-${lang}`);
+            }
+          }
+        });
+        
+        // Update language button
+        const flagClass = {
+          'en': 'fi-gb',
+          'fr': 'fi-fr',
+          'es': 'fi-es',
+          'pt': 'fi-pt',
+          'de': 'fi-de',
+          'ar': 'fi-sa'
+        }[lang];
+        
+        const langText = {
+          'en': 'EN',
+          'fr': 'FR',
+          'es': 'ES',
+          'pt': 'PT',
+          'de': 'DE',
+          'ar': 'AR'
+        }[lang];
+        
+        languageButton.innerHTML = `<span class="fi ${flagClass}"></span> <span>${langText}</span>`;
+        
+        // Set RTL for Arabic
+        if (lang === 'ar') {
+          document.documentElement.dir = 'rtl';
+          document.documentElement.lang = 'ar';
+        } else {
+          document.documentElement.dir = 'ltr';
+          document.documentElement.lang = lang;
+        }
+      }
     });
+document.addEventListener('DOMContentLoaded', function() {
+    // --- THEME TOGGLE ---
+    const themeToggle = document.getElementById('themeToggle');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (localStorage.getItem('theme') === 'dark' || (!localStorage.getItem('theme') && prefersDark)) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    themeToggle.addEventListener('click', function() {
+        const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+        const newTheme = isDark ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        themeToggle.innerHTML = isDark ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
+    });
+
+    // --- LANGUAGE SWITCHING ---
+    const langElements = document.querySelectorAll('[data-en]');
+    const languageLinks = document.querySelectorAll('.language-dropdown a');
+    const languageButton = document.querySelector('.language-button');
+
+    // Set initial language from localStorage or browser, default to English
+    const savedLang = localStorage.getItem('language');
+    const browserLang = navigator.language.slice(0, 2);
+    const currentLang = savedLang || (['en', 'fr', 'es', 'pt', 'de', 'ar'].includes(browserLang) ? browserLang : 'en');
+    
+    setLanguage(currentLang);
+
+    // Add click event to all language links in the dropdown
+    languageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            setLanguage(lang);
+            localStorage.setItem('language', lang); // Save user's choice
+        });
+    });
+
+    function setLanguage(lang) {
+        // Update all text elements with the selected language
+        langElements.forEach(el => {
+            const translation = el.getAttribute(`data-${lang}`);
+            if (translation) {
+                // Check if the element is an input to set placeholder
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.placeholder = translation;
+                } else {
+                    el.textContent = translation;
+                }
+            }
+        });
+
+        // Update the main language button's flag and text
+        const flagClass = { 'en': 'fi-gb', 'fr': 'fi-fr', 'es': 'fi-es', 'pt': 'fi-pt', 'de': 'fi-de', 'ar': 'fi-sa' }[lang];
+        const langText = lang.toUpperCase();
+        languageButton.innerHTML = `<span class="fi ${flagClass}"></span> <span>${langText}</span>`;
+
+        // Set page direction for Arabic (Right-to-Left)
+        if (lang === 'ar') {
+            document.documentElement.dir = 'rtl';
+            document.documentElement.lang = 'ar';
+        } else {
+            document.documentElement.dir = 'ltr';
+            document.documentElement.lang = lang;
+        }
+    }
+});
   </script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=GTM-NGN5JHR8"></script>
 <script>
