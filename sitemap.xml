@@ -13,6 +13,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/index.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/index.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/index.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://appreviewearnings.netlify.app/ru/index.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/index.html" />
   </url>
 
@@ -27,6 +28,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/success.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/success.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/success.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://appreviewearnings.netlify.app/ru/success.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/success.html" />
   </url>
 
@@ -41,6 +43,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/privacy.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/privacy.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://appreviewearnings.netlify.app/ru/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/privacy.html" />
   </url>
 
@@ -55,6 +58,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/terms.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/terms.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://appreviewearnings.netlify.app/ru/terms.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/terms.html" />
   </url>
 
@@ -69,6 +73,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/contact.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/contact.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/contact.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://appreviewearnings.netlify.app/ru/contact.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/contact.html" />
   </url>
 
@@ -83,6 +88,7 @@
     <xhtml:link rel="alternate" hreflang="pt" href="https://appreviewearnings.netlify.app/pt/support.html" />
     <xhtml:link rel="alternate" hreflang="de" href="https://appreviewearnings.netlify.app/de/support.html" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://appreviewearnings.netlify.app/ar/support.html" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://appreviewearnings.netlify.app/ru/support.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://appreviewearnings.netlify.app/support.html" />
   </url>
 
